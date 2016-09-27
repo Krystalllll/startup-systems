@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="ziyan.css">
 <title>Page Title</title>
 </head>
 <body>
@@ -20,6 +16,18 @@
                   ga('create', 'UA-84206605-1', 'auto');
                     ga('send', 'pageview');
  </script>
+    <a href="https://www.spotify.com/us/">Spotify</a>
+    <script src="spotify.js"></script>
+    <script>
+ 
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            alert( "The link will no longer take you to spotify.com" );
+            event.preventDefault();
+        });
+    });
+ 
+    </script>
 </body>
 
 </html>
